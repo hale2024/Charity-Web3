@@ -1,7 +1,9 @@
 cd Charity-Web3
 
-cd client/src/context/index.js
+cd client
 
 npm install
 
 npm run dev
+
+Guys just modify the client/src directory components from the frontend
