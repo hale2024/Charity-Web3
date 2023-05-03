@@ -1,6 +1,6 @@
 cd Charity-Web3
 
-cd client
+cd client/src/context/index.js
 
 npm install
 
