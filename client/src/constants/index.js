@@ -1,37 +1,48 @@
-import { createCampaign, dashboard, logout, payment, profile, withdraw } from '../assets';
+import { createCampaign, dashboard, logout, profile } from "../assets";
 
 export const navlinks = [
   {
-    name: 'dashboard',
+    name: "dashboard",
     imgUrl: dashboard,
-    link: '/',
+    link: "/",
   },
   {
-    name: 'campaign',
+    name: "campaign",
     imgUrl: createCampaign,
-    link: '/create-campaign',
+    link: "/create-campaign",
   },
   {
-    name: 'payment',
-    imgUrl: payment,
-    link: '/',
-    disabled: true,
-  },
-  {
-    name: 'withdraw',
-    imgUrl: withdraw,
-    link: '/',
-    disabled: true,
-  },
-  {
-    name: 'profile',
+    name: "profile",
     imgUrl: profile,
-    link: '/profile',
+    link: "/profile",
   },
   {
-    name: 'logout',
+    name: "logout",
     imgUrl: logout,
-    link: '/',
-    disabled: true,
+    link: "/logout",
   },
 ];
+
+export const palette = {
+  common: {
+    black: "#000000",
+    white: "#ffffff",
+    transparent: "rgba(0,0,0,0)",
+  },
+  black: "#000000",
+  white: "#ffffff",
+  primaryLight: "#C6DAED",
+  primaryMain: "#3d8add",
+  primaryDark: "#346191",
+  background: {
+    main: "#e6eaef",
+    light: "#EEF2F6",
+    dark: "#C4CFDD",
+  },
+  grey100: "#121212",
+  grey200: "#323232",
+  grey300: "#616161",
+  grey400: "#919191",
+  grey500: "#bdbdbd",
+  grey600: "#f1f1f1",
+};
