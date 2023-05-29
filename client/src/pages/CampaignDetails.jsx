@@ -28,10 +28,12 @@ const CampaignDetails = () => {
     if (!walletInstance) {
       alert("Please connect with Metamask!");
     } else {
-      setIsLoading(true);
-      await donate(state.pId, amount);
-      navigate("/");
-      setIsLoading(false);
+      if (amount !== "") {
+        setIsLoading(true);
+        await donate(state.pId, amount);
+        navigate("/");
+        setIsLoading(false);
+      }
     }
   };
 
@@ -153,7 +155,12 @@ const CampaignDetails = () => {
                 value={amount}
                 min="0.01"
                 onChange={(e) => setAmount(e.target.value)}
+                required={true}
               />
+              {amount === "" && (
+                <p className="text-red-600 text-sm mt-1">*Input Required</p>
+              )}
+
               <p className="text-gray-500 text-sm mt-1">
                 We only accept KLAY as of now; please make sure you are using
                 KLAY in Metamask.
