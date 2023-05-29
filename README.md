@@ -10,7 +10,7 @@ Before proceeding with the setup, make sure you have the following software inst
 
 ## Setup Instructions
 
-1. Open your terminal or command prompt.
+1. Open your terminal or command prompt
 2. Navigate to the root directory of the Charity-Web3 project by running the following command: ```cd Charity-Web3```
 3. Change the directory to the client folder using the following command: ```cd client```
 4. Install the project dependencies by running the following command: ```npm install```
